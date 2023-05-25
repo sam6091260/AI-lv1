@@ -1,0 +1,543 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #000;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+    max-width: 100%;   
+    height: auto; }
+
+/* --blank line-- */
+
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1296px;
+}
+
+/* nav bar  */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid  #ffff;
+}
+
+.hbgIcon {
+    display: none;
+}
+
+.logo img {
+    width: 18.89%; 
+    margin: 20px 0;
+}
+
+
+.navbar{
+    display: flex;
+    color: #fff;
+}
+
+.navbar li a{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* landing page */
+
+.landing-top h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 1.2;
+}
+
+.landing-top2 {
+
+    margin-top: 80px; 
+    width: 50%;
+    float: right;
+}
+
+.lt-h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.2;
+
+
+}
+
+.landing-bottom{
+    margin-top: 492px;
+    background: transparent;
+    overflow: hidden;
+}
+
+
+.h3_style {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+
+/* sectionA */
+
+.sectionA {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.title {
+    margin: 160px 0 80px 0;
+}
+
+.cards-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-price {
+    border: 1px solid #525252;
+    border-radius: 16px;
+    width: 49%;
+    margin-bottom: 24px;
+}
+
+.cardT {
+    height: 31%;
+    flex-direction: column;
+    padding: 20px 0 136px 32px;
+}
+
+.cardT ul{
+    color: #F2F2F2;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.cardB {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #525252;
+    padding: 20px 32px;
+
+}
+
+.cardB-l {
+    display: flex;
+    align-items: center;
+}
+
+.cardB-l p {
+    font-weight: 900;
+}
+.cardB-l span {
+    color: #525252;
+}
+
+.cardB-r a{
+    text-decoration: none;
+    color:  #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.cardB-r span {
+    font-size: 15px;
+    margin-left: 12px;
+}
+
+
+/* sectionB */
+
+.sectionB {
+    display: flex;
+    justify-content: space-between;
+    margin: 160px 0;
+}
+
+.sb-r p {
+    color: #F2F2F2;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #525252;
+}
+
+.sb-r h2 {
+    margin-bottom: 24px;
+}
+
+
+/* big white */
+
+.bg-white {
+    background-color: #fff;
+    border-radius: 160px;
+    padding: 160px 0;
+    margin-bottom: 80px;
+}
+
+.tools-width {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+/* tools content */
+
+.tools h2 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: #F2F2F2;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.search span{ 			
+    color: #919191;
+    margin-left: 43px;
+    padding: 20px 0;
+
+}
+
+.tools-input {
+    width: 100%;
+    background: #F2F2F2;
+    border-radius: 16px;
+    padding: 20px;
+    color: #919191;
+    cursor: pointer;
+}
+
+/* tools search */
+
+.tools-searchB {
+    display: none;
+}
+
+.tools-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.input-img{
+    padding: 20px 34.7px 20px 40px;
+    display: flex;
+    border: 1px solid #F2F2F2;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.input-img input {
+    margin-right: 12px;
+    background-color: #fff;
+}
+
+
+.ul-list ul {
+    display: flex;
+    
+}
+
+.ul-list li a{
+    display: block;
+    padding: 8px 16px;
+    color: #919191;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.ul-list li a:hover{
+    background: #F2F2F2;
+    border-radius: 16px;
+}
+
+
+/* tools list */
+
+.containerB {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #F2F2F2;
+    border-radius: 16px;
+    width: 30%;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.card h3{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 20px 32px 12px 32px;
+}
+.cardP {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #525252;
+    margin: 0 32px 20px 32px;
+    flex-grow: 1;
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-top: 1px solid #F2F2F2;
+}
+
+.card-item a {
+    color: #000;
+}
+
+.pBold {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card img:hover {
+    transform:scale(1.2);transition: all 0.2s ease-out;
+}
+
+/* tools pagenation */
+
+.pagenation {
+    margin-top: 16px;
+}
+.pagenation ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4px;
+
+}
+
+.pagenation a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #020202;
+    padding: 16px 4px;
+    width: 48px;
+}
+
+
+.pagenation a:hover{
+    background: #000000;
+    color: #fff;
+    border-radius: 16px;
+}
+
+
+/* footer的總寬 */
+.footer-width {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+/* QA */
+.QA {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 160px;
+}
+
+.qa-l {
+    width: 40%;
+}
+
+.qa-r {
+    width: 60%;
+}
+
+.qa-r li {
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+    border: 1px solid #525252;
+    border-radius: 16px;
+    padding: 20px 40px;
+    margin-bottom: 16px;
+}
+
+.qa-r h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.qa-r li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* footer */
+
+.footer {
+    border-top: 1px solid #ffff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    
+}
+
+.top-L h2 {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.top-R img{
+    width: 228.99px; 
+}
+
+.footer-bottom {
+    border-top: 1px solid #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+    flex-wrap: wrap;
+}
+
+.bottom-L {
+    display: flex;
+}
+
+.bottom-L p, a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottom-L p {
+    margin-right: 100px;
+}
+
+.bottom-L a {
+    margin-right: 20px;
+}
+
+.bottom-R button {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-bottomB {
+    display: none;
+}
+
+
+/* animation */
+
+@keyframes landing-bottom {
+    0%, 30% {
+        transform: translateY(101%);
+    }
+    80%, 95% {
+        transform: translateY(0);
+    }
+    
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.img1 {
+    animation: landing-bottom 4s 2.5s both infinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.img2 {
+    animation: landing-bottom 4s 2s both infinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.img3 {
+    animation: landing-bottom 4s 1.5s both infinite;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
