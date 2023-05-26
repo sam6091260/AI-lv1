@@ -14,6 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -33,11 +38,12 @@
           <button class="hbgIcon">
             <img src="./img/hamburger.png" alt="" />
           </button>
-
-          <ul class="navbar">
-            <li><a href="./index.html">首頁</a></li>
-            <li><a href="./page.html">定價</a></li>
-          </ul>
+          <div>
+            <ul>
+              <li><a href="./index.html">首頁</a></li>
+              <li><a href="./page.html">定價</a></li>
+            </ul>
+          </div>
         </div>
         <!-- landing page -->
         <div class="landing">
@@ -102,29 +108,121 @@
           <h3 class="textH3">來自合作夥伴</h3>
           <div class="mask-left"></div>
           <div class="mask-right"></div>
-
-          <div class="sc-top">
-            <img src="./img/sectionC/1.png" alt="" />
-            <img src="./img/sectionC/2.png" alt="" />
-            <img src="./img/sectionC/3.png" alt="" />
-            <img src="./img/sectionC/4.png" alt="" />
-            <img src="./img/sectionC/5.png" alt="" />
-            <img src="./img/sectionC/6.png" alt="" />
-            <img src="./img/sectionC/7.png" alt="" />
-            <img src="./img/sectionC/2.png" alt="" />
-          </div>
-          <div class="sc-bottom">
-            <img src="./img/sectionC/8.png" alt="" />
-            <img src="./img/sectionC/9.png" alt="" />
-            <img src="./img/sectionC/10.png" alt="" />
-            <img src="./img/sectionC/11.png" alt="" />
-            <img src="./img/sectionC/12.png" alt="" />
-            <img src="./img/sectionC/13.png" alt="" />
-            <img src="./img/sectionC/14.png" alt="" />
+          <div class="scrollable-container">
+            <div class="sc-top">
+              <img src="./img/sectionC/1.png" alt="" />
+              <img src="./img/sectionC/2.png" alt="" />
+              <img src="./img/sectionC/3.png" alt="" />
+              <img src="./img/sectionC/4.png" alt="" />
+              <img src="./img/sectionC/5.png" alt="" />
+              <img src="./img/sectionC/6.png" alt="" />
+              <img src="./img/sectionC/7.png" alt="" />
+              <img src="./img/sectionC/2.png" alt="" />
+            </div>
+            <div class="sc-bottom">
+              <img src="./img/sectionC/8.png" alt="" />
+              <img src="./img/sectionC/9.png" alt="" />
+              <img src="./img/sectionC/10.png" alt="" />
+              <img src="./img/sectionC/11.png" alt="" />
+              <img src="./img/sectionC/12.png" alt="" />
+              <img src="./img/sectionC/13.png" alt="" />
+              <img src="./img/sectionC/14.png" alt="" />
+            </div>
           </div>
         </div>
 
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="itemD">
+                <div class="itemD-top">
+                  <ul>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                  </ul>
+                  <p>
+                    非常喜歡 AI工具王 提供的 AI
+                    模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王
+                    提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！
+                  </p>
+                </div>
+                <div class="itemD-bottom">
+                  <img src="./img/sectionD/chen.png" alt="" />
+                  <div class="br">
+                    <span>陳小姐</span>
+                    <p>ABC科技有限公司</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itemD">
+                <div class="itemD-top">
+                  <ul>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                  </ul>
+                  <p>
+                    作為一家醫療器材公司，我們非常關注人工智能技術的應用，而
+                    AI工具王 提供的 AI
+                    模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王
+                    的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝
+                    AI工具王 團隊的辛勤工作！
+                  </p>
+                </div>
+                <div class="itemD-bottom">
+                  <img src="./img/sectionD/liu.png" alt="" />
+                  <div class="br">
+                    <span>劉小姐</span>
+                    <p>XYZ醫療器材有限公司</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itemD">
+                <div class="itemD-top">
+                  <ul>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                    <li><img src="./img/sectionD/star.png" alt="" /></li>
+                  </ul>
+                  <p>
+                    我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而
+                    AI工具王 提供的 AI
+                    模型租賃服務正好滿足了我們的需求。我們使用 AI工具王
+                    的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝
+                    AI工具王 團隊的支持！
+                  </p>
+                </div>
+                <div class="itemD-bottom">
+                  <img src="./img/sectionD/huang.png" alt="" />
+                  <div class="br">
+                    <span>黃先生</span>
+                    <p>EFG銀行</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-pagination"></div>
+        </div>
+
         <!-- sectionD -->
+
         <div class="sectionD">
           <div class="itemD">
             <div class="itemD-top">
@@ -218,6 +316,7 @@
                 <input type="button" value="篩選" />
                 <span class="material-icons"> filter_alt </span>
               </div>
+
               <div class="ul-list">
                 <ul>
                   <li><a href="#">全部</a></li>
@@ -229,6 +328,7 @@
                   <li><a href="#">生產力</a></li>
                 </ul>
               </div>
+
               <div class="input-img">
                 <input type="button" value="由新到舊" />
                 <span class="material-icons"> expand_more</span>
@@ -244,16 +344,19 @@
                 <input type="button" value="由新到舊" />
                 <span class="material-icons"> expand_more</span>
               </div>
-              <div class="ul-list">
-                <ul>
-                  <li><a href="#">全部</a></li>
-                  <li><a href="#">聊天</a></li>
-                  <li><a href="#">影像辨識</a></li>
-                  <li><a href="#">翻譯</a></li>
-                  <li><a href="#">行銷</a></li>
-                  <li><a href="#">客服</a></li>
-                  <li><a href="#">生產力</a></li>
-                </ul>
+
+              <div class="scrollable-container">
+                <div class="ul-list">
+                  <ul>
+                    <li><a href="#">全部</a></li>
+                    <li><a href="#">聊天</a></li>
+                    <li><a href="#">影像辨識</a></li>
+                    <li><a href="#">翻譯</a></li>
+                    <li><a href="#">行銷</a></li>
+                    <li><a href="#">客服</a></li>
+                    <li><a href="#">生產力</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
 
@@ -464,6 +567,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <script src="./app.js"></script>
   </body>
