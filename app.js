@@ -10,15 +10,6 @@ hbgBtn.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
-// $(document).ready(function () {
-//   //initialize swiper when document ready
-//   var mySwiper = new Swiper(".swiper-container", {
-//     // Optional parameters
-//     direction: "vertical",
-//     loop: true,
-//   });
-// });
-
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
@@ -86,29 +77,29 @@ const swiper = new Swiper(".swiper", {
 //   list.innerHTML = works;
 // }
 
-axios
-  .get(
-    "https://soa.tainan.gov.tw/Api/Service/Get/b1054400-86a4-40fa-aea0-fb39fce361e2"
-  )
-  .then((response) => {
-    const data = response.data;
-    console.log(data);
+// axios
+//   .get(
+//     "https://soa.tainan.gov.tw/Api/Service/Get/b1054400-86a4-40fa-aea0-fb39fce361e2"
+//   )
+//   .then((res) => {
+//     const data = res.data.data;
+//     console.log(data);
 
-    const totalCount = response.data.data.length;
-    console.log("臺南市總共有", totalCount, "個國小");
+//     const totalCount = res.data.data.length;
+//     console.log("臺南市總共有", totalCount, "個國小");
 
-    // 取得大甲國小的學生人數
-    const schools = response.data.data;
-    const daJiaSchool = schools.find(
-      (school) => school.SchoolName === "大甲國小"
-    );
-    if (daJiaSchool) {
-      const studentCount = daJiaSchool.NumberOfPeople;
-      console.log("大甲國小學生人數:", studentCount);
-    } else {
-      console.log("找不到大甲國小的資料");
-    }
-  })
-  .catch((error) => {
-    console.log("發生錯誤:", error);
-  });
+//     // 取得大甲國小的學生人數
+//     const schools = res.data.data;
+//     const daJiaSchool = schools.find(
+//       (school) => school.school.trim() === "大甲"
+//     );
+//     if (daJiaSchool) {
+//       const studentCount = daJiaSchool.num.trim();
+//       console.log("大甲國小學生人數:", studentCount);
+//     } else {
+//       console.log("找不到大甲國小的資料");
+//     }
+//   })
+//   .catch((err) => {
+//     console.log("發生錯誤:", err);
+//   });

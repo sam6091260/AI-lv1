@@ -43,6 +43,7 @@ img {
 .wrap {
     margin: 0 auto;
     max-width: 1296px;
+    padding: 12px;
 }
 
 /* nav bar  */
@@ -138,6 +139,8 @@ img {
     border-radius: 16px;
     width: 49%;
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardT {
@@ -223,6 +226,7 @@ img {
 .tools-width {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 12px;
 }
 
 /* tools content */
@@ -401,6 +405,7 @@ img {
 .footer-width {
     max-width: 1296px;
     margin: 0 auto;
+    padding: 12px;
 }
 
 /* QA */
@@ -541,3 +546,239 @@ img {
     animation-iteration-count: infinite;
 }
 
+
+
+@media(max-width: 992px) {
+
+    .wrap {
+        padding: 12px;
+    }
+   
+    .logo img{
+        width: 50%;
+    }
+    .hbgIcon {
+      display: flex;
+      background: none;
+      cursor: pointer;
+      height: 150%;
+      width: 10%;
+    }
+  
+    .open li {
+    top: 100%;
+    width: 100%;
+    transition: 0.3s ease-out;
+    transform: scale(1, 0);
+    transform-origin: top;
+    }
+
+    .nav ul {
+        transform: scale(1, 1);
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        
+    }
+
+    .landing-top h1{
+        font-size: 48px;
+        line-height: 1.2;
+        margin-top: 40px;
+    }
+
+    .landing-bottom img{
+        width: 32%;
+    }
+    
+    .lt-h2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .card-price {
+        width: 100%;
+    }
+
+
+    .section-R h2 {
+        font-size: 32px;
+        margin-bottom: 48px;
+    }
+
+    .sectionB {
+        display: flex;
+        flex-direction: column;
+        margin: 120px 0;
+    }
+    
+    .sb-l {
+        margin-bottom: 48px;
+    }
+
+
+    .sectionD {
+        display: none;
+    }
+
+
+    .itemD {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        padding: 40px;
+    }
+
+    .tools-width {
+        padding: 12px;
+    }
+
+
+    .scrollable-container {
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+    .bg-white {
+        border-radius: 20px;
+    }
+ 
+
+    .tools-search {
+        display: none;
+    }
+
+    .tools-searchB {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:40px;
+        flex-wrap: wrap;
+    }
+
+    .input-img{
+        padding: 20px 34.7px 20px 40px;
+        display: flex;
+        border: 1px solid #F2F2F2;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+    .input-img input {
+        margin-right: 12px;
+        background-color: #fff;
+    }
+
+
+    .ul-list {
+       margin: 0 auto;
+       margin-top: 32px;
+    }
+
+    .ul-list li a{
+        display: block;
+        padding: 8px 16px;
+        color: #919191;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    .ul-list li a:hover{
+        background: #F2F2F2;
+        border-radius: 16px;
+    }
+
+
+    .tools h2 {
+        font-size: 32px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .containerB {
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+    }
+    
+    .card {
+        width: 100%;
+    }
+
+    .card-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .footer {
+        margin: 0 12px;
+    }
+    .switch h2{
+        font-size: 32px;
+    }
+    .input-imgB {
+        margin-bottom: 80px;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .top-R {
+        margin-bottom: 40px;
+    }
+
+    .top-L h2{
+        font-size: 48px;
+    }
+
+ 
+    .footer-bottom {
+        display: none;
+    }
+
+    .footer-bottomB {
+        border-top: 1px solid #ffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+        flex-wrap: wrap;
+    }
+    
+ 
+    
+    .bottom-L p {
+        margin-bottom: 36px;
+    }
+    
+    .bottom-L button {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+        background-color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .bottom-R a{
+      margin: 20px;
+    }
+    
+
+    .footer-width {
+        padding: 12px;
+    }
+  }
+
+
+
+  @media(max-width: 767px) {
+    .wrap {
+        padding: 0 12px;
+    }
+  }
